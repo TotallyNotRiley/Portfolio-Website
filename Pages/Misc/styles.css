@@ -54,3 +54,22 @@ body {
     font-family: 'Dennis Sans', sans-serif;
     border-radius: 20px;
   }
+
+  .Main {
+    background-color: #252526;
+    color: white;
+    padding: 30px;
+    margin: 50px;
+    font-family: 'Dennis Sans', sans-serif;
+    border-radius: 20px;
+    text-align: left;
+  }
+
+  .Header {
+    border-radius: 10px;
+    background-color: #252526;
+    color: white;
+    padding: 20px;
+    font-family: 'Dennis Sans', sans-serif;
+    width: fit-content;
+  }
