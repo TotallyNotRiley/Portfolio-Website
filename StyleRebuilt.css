@@ -22,42 +22,27 @@ section {
     transition: all 1s;
 }
 
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
-
 .show {
     opacity: 1;
     filter: blur(0px);
     transform: translate(0%);
 }
 
-.cards {
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+#div-1 {
     display: flex;
+    padding: 15px;
 }
 
-.cards:nth-child(1) {
-    transition-delay: 600ms ;
-}
- 
-.cards:nth-child(2) {
-    transition-delay: 400ms ;
+#icon-1 {
+    align-self: center;
 }
 
-.cards:nth-child(3) {
-    transition-delay: 200ms ;
+#para-1 {
+    margin:5px;
 }
-
-.cardtext {
-    background-color: #1F252A;
-    margin: 15px;
-    padding: 50px;
-    border-radius: 20px;
-}
-
-a {
-    color: #AAB3B9;
-}
-
