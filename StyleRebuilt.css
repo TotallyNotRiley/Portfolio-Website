@@ -15,6 +15,7 @@ section {
     min-height: 75vh;
 }
 
+
 /* Styles for motion */ 
 
 .hidden {
@@ -58,76 +59,36 @@ section {
 }
 
 
-/* Styles for cards */ 
-
-.cards {
-    display: flex;
-}
-
-.cards:nth-child(1) {
-    transition-delay: 600ms ;
-}
- 
-.cards:nth-child(2) {
-    transition-delay: 400ms ;
-}
-
-.cards:nth-child(3) {
-    transition-delay: 200ms ;
-}
-
-.cardtext {
-    background-color: #1F252A;
-    margin: 15px;
-    padding: 50px;
-    border-radius: 20px;
-}
-
 /* Cards */
 
 * {
     box-sizing: border-box;
-  }
+}
   
-  /* Float four columns side by side */
   .column {
     float: left;
     width: 25%;
     padding: 0 10px;
-  }
+}
   
-  /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 -5px;}
+  .row {
+    margin: 0 -5px;
+}
   
-  /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
-  /* Style the counter cards */
   .card {
     background-color: #1F252A;
-    margin: 15px;
     padding: 50px;
     border-radius: 20px;
     display: flex;
     align-items: center;
-  }
-
-.row:nth-child(1) {
-    transition-delay: 600ms ;
-}
- 
-.row:nth-child(2) {
-    transition-delay: 400ms ;
 }
 
-.row:nth-child(3) {
-    transition-delay: 200ms ;
-}
-  
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 600px) {
     .column {
@@ -135,4 +96,8 @@ section {
       display: block;
       margin-bottom: 20px;
     }
-  }
+}
+
+a {
+    color: #AAB3B9;
+}
