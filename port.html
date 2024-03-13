@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Updated Document</title>
+    <title>Riley Kim · Freelance Developer</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script defer src="FadeScroll.js"></script>
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -13,6 +16,8 @@ body {
     background-color: #e8e8e8;
     color: rgb(88, 87, 87);
     margin: 0;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 section {
@@ -22,6 +27,13 @@ section {
   align-items: center;
   min-height: 400px;
   padding: 100px 20vw;
+}
+
+footer {
+    min-height: 400px;
+    padding: 100px 20vw;
+    text-align: center;
+    position: relative;
 }
 
 .hidden {
@@ -41,42 +53,275 @@ section {
         transition: none;
     }
 }
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.box {
+    flex: 1;
+    margin: 15px;
+    border: 2px solid #ccc;
+}
+
+.card {
+    width: 190px;
+    max-width: 190px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+  }
+  
+.card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+.card-image:hover {
+    transform: scale(0.98);
+  }
+  
+.category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+.category:hover {
+    cursor: pointer;
+  }
+  
+.heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+.heading:hover {
+    cursor: pointer;
+  }
+  
+.author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+
+* {
+    box-sizing: border-box;
+}
+  
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+  
+.row {
+    margin: 0 -5px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+.text {
+    margin-left: 5px;
+}
+
+.text-sub {
+    font-size: small;
+}
+
+.skillcard {
+    width: 190px;
+    max-width: 190px;
+    background: white;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: rgb(88, 87, 87);
+    text-decoration: none;
+}
     </style>
 </head>
 <body>
 
-    <section class="hidden">
-        <h1>Test Text</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nostrum? Iure alias blanditiis at enim sint cumque ducimus minima laudantium nemo placeat quis molestiae, quisquam facere corporis deleniti. Sunt, rem.</p>
+    <section class="hidden"> <!--Welcome-->
+        <h1>Welcome to my portfolio</h1>
+        <p>Here you can find all my work, videos, and tools</p>
     </section>
-    <section class="hidden">
-        <h1>Test Text</h1>
-        <p>Dolorem fugiat, libero iste ex impedit fuga, voluptas eligendi delectus sunt deleniti sit reprehenderit sequi repudiandae vel quisquam debitis ea excepturi accusamus? Ex, accusamus consequatur earum inventore repellendus natus velit.</p>
+
+    <section class="hidden"> <!--My Work-->
+        <h1>My Work</h1>
+        <div class="container"> <!--Row One Projects-->
+            <a class="card box" href="https://github.com/TotallyNotRiley/Portfolio-Website">
+                <div class="card-image">
+                        <img style="max-width: 100%; max-height: 100%;" src="HtmlCss.png" alt="Trifecta"> 
+                </div>
+                <div class="category"> Website </div>
+                <div class="heading"> Professional work portfolio
+                    <div class="author"> Posted: March 13, 2024</div>
+                </div>
+            </a>
+            <div class="card box">
+                <div class="card-image"></div>
+                <div class="category"> Example Catagory </div>
+                <div class="heading"> Example title that spans over two lines
+                    <div class="author"> Posted: March 11, 2024</div>
+                </div>
+            </div>
+            <div class="card box">
+                <div class="card-image"></div>
+                <div class="category"> Example Catagory </div>
+                <div class="heading"> Example title that spans over two lines
+                    <div class="author"> Posted: March 11, 2024</div>
+                </div>
+            </div>
+            <div class="card box">
+                <div class="card-image"></div>
+                <div class="category"> Example Catagory </div>
+                <div class="heading"> Example title that spans over two lines
+                    <div class="author"> Posted: March 11, 2024</div>
+                </div>
+            </div>
+        </div>
+        <div class="container"> <!--Row Two Projects-->
+            <div class="card box">
+                <div class="card-image"></div>
+                <div class="category"> Example Catagory </div>
+                <div class="heading"> Example title that spans over two lines
+                    <div class="author"> Posted: March 11, 2024</div>
+                </div>
+            </div>
+            <div class="card box">
+                <div class="card-image"></div>
+                <div class="category"> Example Catagory </div>
+                <div class="heading"> Example title that spans over two lines
+                    <div class="author"> Posted: March 11, 2024</div>
+                </div>
+            </div>
+            <div class="card box">
+                <div class="card-image"></div>
+                <div class="category"> Example Catagory </div>
+                <div class="heading"> Example title that spans over two lines
+                    <div class="author"> Posted: March 11, 2024</div>
+                </div>
+            </div>
+            <div class="card box">
+                <div class="card-image"></div>
+                <div class="category"> Example Catagory </div>
+                <div class="heading"> Example title that spans over two lines
+                    <div class="author"> Posted: March 11, 2024</div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="hidden">
-        <h1>Test Text</h1>
-        <p>Dolorum, natus facilis. Sed tenetur beatae minima temporibus consequatur vel recusandae id doloremque in, doloribus eos laudantium explicabo consequuntur reprehenderit accusantium minus blanditiis pariatur tempore porro ipsum dolorum. Quam, quis?</p>
+
+    <section class="hidden"> <!--My Skills-->
+        <h1>My Skills</h1>
+        <div class="row"> <!--Row One Skills-->
+            <div class="column">
+                <div class="skillcard hidden">
+                    <i class="material-icons">verified</i>
+                    <span class="text">
+                        HTML <br/>
+                    <span class="text-sub">
+                        Expert
+                    </span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="skillcard hidden">
+                    <i class="material-icons">verified</i>
+                    <span class="text">
+                        CSS <br/>
+                    <span class="text-sub">
+                        Intermediate
+                    </span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="skillcard hidden">
+                    <i class="material-icons">verified</i>
+                    <span class="text">
+                        Javascript <br/>
+                    <span class="text-sub">
+                        Beginner
+                    </span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="skillcard hidden">
+                    <i class="material-icons">verified</i>
+                    <span class="text">
+                        OpenGL <br/>
+                    <span class="text-sub">
+                        Beginner
+                    </span>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="hidden">
-        <h1>Test Text</h1>
-        <p>Expedita iste atque voluptatem ratione voluptate debitis optio quae delectus exercitationem excepturi itaque quia facere et quasi consequuntur corrupti cum iusto illum aut, quis ut, impedit sapiente? Odio, cumque omnis!</p>
+
+    <section class="hidden"> <!--My Socials-->
+        <h1>My Socials</h1>
+        <div class="row"> <!--Row One Socials-->
+            <div class="column">
+                <div class="skillcard hidden">
+                    <i class="material-icons">link</i>
+                    <a class="text" href="https://codepen.io/TotallyNotRiley">Codepen</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="skillcard hidden">
+                    <i class="material-icons">link</i>
+                    <a class="text" href="https://github.com/TotallyNotRiley">Github</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="skillcard hidden">
+                    <i class="material-icons">link</i>
+                    <a class="text" href="https://www.youtube.com/channel/UCo2eZby34iNHbakbJ74ys9w">Youtube</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="skillcard hidden">
+                    <i class="material-icons">link</i>
+                    <a class="text" href="www.linkedin.com/in/riley-kim-41828b2ba">LinkedIn</a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="hidden">
-        <h1>Test Text</h1>
-        <p>Nobis ullam sapiente laborum facilis. Iure voluptatum aliquid molestiae debitis. Commodi tempora ad, perspiciatis, veritatis dignissimos porro unde nam dolorum quia, alias ullam vel ipsum nemo eos incidunt sunt sapiente.</p>
-    </section>
-    <section class="hidden">
-        <h1>Test Text</h1>
-        <p>Consectetur quisquam non maxime sed! Dolores tempore labore rerum recusandae dicta nesciunt nostrum sint voluptatum in porro, laborum necessitatibus corporis sunt distinctio esse cumque nemo! Culpa recusandae pariatur officiis fuga.</p>
-    </section>
-    <section class="hidden">
-        <h1>Test Text</h1>
-        <p>Blanditiis eius iure consectetur, nostrum aperiam molestias consequuntur id minima error repellat quibusdam ipsam harum aliquam, reiciendis officiis perspiciatis vero neque provident, ducimus facere rem. Suscipit sit quidem assumenda mollitia.</p>
-    </section>
-    <section class="hidden">
-        <h1>Test Text</h1>
-        <p>Vel, optio doloremque autem corrupti itaque amet temporibus qui repellendus provident dolor dignissimos, et impedit excepturi, illo cumque nulla labore similique. Sit accusantium consequatur sunt expedita veritatis praesentium optio excepturi.</p>
-    </section>
+
+    <footer class="hidden"> <!--Footer Contact Info-->
+        <h1>Thanks for visiting</h1>
+        <span>+1&nbsp;(808)-798-5234</span>
+        <span><b>&nbsp;|&nbsp;</b></span>
+        <span>RileyKim.code@gmail.com</span>
+    </footer>
 
 </body>
 </html>
