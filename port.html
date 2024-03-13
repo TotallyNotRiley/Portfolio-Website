@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Document</title>
+    <script defer src="FadeScroll.js"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Montserrat;
+    background-color: #e8e8e8;
+    color: rgb(88, 87, 87);
+    margin: 0;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 100px 20vw;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.8s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translate(0%);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <section class="hidden">
+        <h1>Test Text</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nostrum? Iure alias blanditiis at enim sint cumque ducimus minima laudantium nemo placeat quis molestiae, quisquam facere corporis deleniti. Sunt, rem.</p>
+    </section>
+    <section class="hidden">
+        <h1>Test Text</h1>
+        <p>Dolorem fugiat, libero iste ex impedit fuga, voluptas eligendi delectus sunt deleniti sit reprehenderit sequi repudiandae vel quisquam debitis ea excepturi accusamus? Ex, accusamus consequatur earum inventore repellendus natus velit.</p>
+    </section>
+    <section class="hidden">
+        <h1>Test Text</h1>
+        <p>Dolorum, natus facilis. Sed tenetur beatae minima temporibus consequatur vel recusandae id doloremque in, doloribus eos laudantium explicabo consequuntur reprehenderit accusantium minus blanditiis pariatur tempore porro ipsum dolorum. Quam, quis?</p>
+    </section>
+    <section class="hidden">
+        <h1>Test Text</h1>
+        <p>Expedita iste atque voluptatem ratione voluptate debitis optio quae delectus exercitationem excepturi itaque quia facere et quasi consequuntur corrupti cum iusto illum aut, quis ut, impedit sapiente? Odio, cumque omnis!</p>
+    </section>
+    <section class="hidden">
+        <h1>Test Text</h1>
+        <p>Nobis ullam sapiente laborum facilis. Iure voluptatum aliquid molestiae debitis. Commodi tempora ad, perspiciatis, veritatis dignissimos porro unde nam dolorum quia, alias ullam vel ipsum nemo eos incidunt sunt sapiente.</p>
+    </section>
+    <section class="hidden">
+        <h1>Test Text</h1>
+        <p>Consectetur quisquam non maxime sed! Dolores tempore labore rerum recusandae dicta nesciunt nostrum sint voluptatum in porro, laborum necessitatibus corporis sunt distinctio esse cumque nemo! Culpa recusandae pariatur officiis fuga.</p>
+    </section>
+    <section class="hidden">
+        <h1>Test Text</h1>
+        <p>Blanditiis eius iure consectetur, nostrum aperiam molestias consequuntur id minima error repellat quibusdam ipsam harum aliquam, reiciendis officiis perspiciatis vero neque provident, ducimus facere rem. Suscipit sit quidem assumenda mollitia.</p>
+    </section>
+    <section class="hidden">
+        <h1>Test Text</h1>
+        <p>Vel, optio doloremque autem corrupti itaque amet temporibus qui repellendus provident dolor dignissimos, et impedit excepturi, illo cumque nulla labore similique. Sit accusantium consequatur sunt expedita veritatis praesentium optio excepturi.</p>
+    </section>
+
+</body>
+</html>

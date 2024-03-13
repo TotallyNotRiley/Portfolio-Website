@@ -1,11 +1,14 @@
-const appear = document.querySelector('.appear'); 
-const cb3 = function(entries){
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('inview');
-      entry.unobserve(entry.target)
-    }
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+      } else {
+          entry.target.classList.remove('show');
+      }
   });
-}
-const io3 = new IntersectionObserver(cb3);
-io3.observe(appear);
+});
+
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
